@@ -1,0 +1,15 @@
+micronaut:
+  application:
+    name: orchestratorService
+  server:
+    port: 8080
+netty:
+  default:
+    allocator:
+      max-order: 3
+
+rabbitmq:
+  host: "localhost"
+  port: 5672
+  username: "user"
+  password: "user"
