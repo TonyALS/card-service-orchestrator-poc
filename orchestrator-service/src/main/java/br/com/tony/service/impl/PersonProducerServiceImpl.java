@@ -7,8 +7,6 @@ import br.com.tony.domain.Metadata;
 import br.com.tony.service.PersonProducerService;
 import jakarta.inject.Singleton;
 
-import java.util.Map;
-
 @Singleton
 public class PersonProducerServiceImpl implements PersonProducerService {
 
@@ -21,6 +19,6 @@ public class PersonProducerServiceImpl implements PersonProducerService {
     @Override
     public void requestPersonData(PersonRequest personRequest, Metadata metadata) {
         PersonProducerRequest producerRequest = new PersonProducerRequest(personRequest.clientId());
-        personProducer.requestPersonData(producerRequest);
+        personProducer.requestPersonData(producerRequest, metadata.getHeaders());
     }
 }
