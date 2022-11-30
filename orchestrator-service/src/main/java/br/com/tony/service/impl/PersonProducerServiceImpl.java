@@ -1,6 +1,6 @@
 package br.com.tony.service.impl;
 
-import br.com.tony.client.PersonProducer;
+import br.com.tony.client.producer.PersonProducer;
 import br.com.tony.client.dto.PersonProducerRequest;
 import br.com.tony.controller.dto.PersonRequest;
 import br.com.tony.domain.Metadata;

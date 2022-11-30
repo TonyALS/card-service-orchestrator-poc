@@ -1,4 +1,4 @@
-package br.com.tony.client;
+package br.com.tony.client.producer;
 
 import br.com.tony.client.dto.PersonProducerRequest;
 import io.micronaut.rabbitmq.annotation.Binding;
