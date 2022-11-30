@@ -1,7 +1,7 @@
 package br.com.tony.service;
 
-import br.com.tony.domain.PersonDTO;
+import br.com.tony.domain.client.RequestDTO;
 
 public interface PersonService {
-    PersonDTO findById(Long id);
+    void processRequest(RequestDTO requestDTO);
 }
