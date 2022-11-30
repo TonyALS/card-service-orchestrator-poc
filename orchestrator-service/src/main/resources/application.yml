@@ -3,6 +3,7 @@ micronaut:
     name: orchestratorService
   server:
     port: 8080
+
 netty:
   default:
     allocator:

@@ -28,7 +28,7 @@ public class CardController {
         String correlationId = headers.get(HeaderName.CORRELATION_ID_HEADER_NAME);
         Metadata metadata = new Metadata();
         metadata.setCorrelationId(correlationId);
-        LOGGER.info("CardRequest received. Correlation-Id: {}", correlationId);
+        LOGGER.info("CardRequest received with correlation-id: {}", correlationId);
         producerService.requestPersonData(personRequest, metadata);
         return HttpResponse.ok();
     }
