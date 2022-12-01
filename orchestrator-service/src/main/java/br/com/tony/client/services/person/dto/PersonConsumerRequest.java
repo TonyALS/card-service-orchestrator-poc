@@ -1,4 +1,4 @@
-package br.com.tony.client.dto;
+package br.com.tony.client.services.person.dto;
 
 import java.time.LocalDate;
 

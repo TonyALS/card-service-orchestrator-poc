@@ -1,6 +1,6 @@
-package br.com.tony.client.consumer;
+package br.com.tony.client.services.person.consumer;
 
-import br.com.tony.client.dto.PersonConsumerRequest;
+import br.com.tony.client.services.person.dto.PersonConsumerRequest;
 import io.micronaut.rabbitmq.annotation.Queue;
 import io.micronaut.rabbitmq.annotation.RabbitHeaders;
 import io.micronaut.rabbitmq.annotation.RabbitListener;
