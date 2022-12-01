@@ -1,6 +1,6 @@
 package br.com.tony.controller.interceptor;
 
-import br.com.tony.controller.header.HeaderName;
+import br.com.tony.domain.HeaderName;
 import io.micronaut.http.HttpRequest;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.annotation.Filter;
