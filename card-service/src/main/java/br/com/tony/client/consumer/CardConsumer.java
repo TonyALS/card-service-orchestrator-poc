@@ -28,6 +28,6 @@ public class CardConsumer {
                                   @RabbitHeaders Map<String, Object> headers) {
         LOGGER.info("Received message with correlation-id {}", headers.get(CORRELATION_ID_HEADER_NAME));
         ProcessCardRequestDTO cardRequestDTO = new ProcessCardRequestDTO(consumerRequest, headers);
-        processCardRequest.processCardRequest(cardRequestDTO);
+        processCardRequest.processCardRequest(cardRequestDTO, headers);
     }
 }
