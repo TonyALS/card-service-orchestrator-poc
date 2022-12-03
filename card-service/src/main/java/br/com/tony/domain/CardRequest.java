@@ -12,5 +12,25 @@ public class CardRequest {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Long customerId;
-    private CardRequestStatus cardRequestStatus;
+    private Integer requestStatus;
+
+    public CardRequest() {
+    }
+
+    public CardRequest(Long customerId, Integer requestStatus) {
+        this.customerId = customerId;
+        this.requestStatus = requestStatus;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public Long getCustomerId() {
+        return customerId;
+    }
+
+    public Integer getRequestStatus() {
+        return requestStatus;
+    }
 }
