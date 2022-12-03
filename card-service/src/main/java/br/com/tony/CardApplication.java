@@ -2,8 +2,8 @@ package br.com.tony;
 
 import io.micronaut.runtime.Micronaut;
 
-public class Application {
+public class CardApplication {
     public static void main(String[] args) {
-        Micronaut.run(Application.class, args);
+        Micronaut.run(CardApplication.class, args);
     }
 }
